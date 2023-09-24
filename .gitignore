@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# session und outputs and env
+outputs/
+session/
+env2/
+
 # Distribution / packaging
 .Python
 build/
