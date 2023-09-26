@@ -15,6 +15,8 @@ source ./env2/bin/activate
 ```
 
 ```
+ulimit -n 4096
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 bash gtg_shapley_train.sh
 ```
 
