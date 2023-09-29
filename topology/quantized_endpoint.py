@@ -1,10 +1,10 @@
 from typing import Any, Callable
 
 from cyy_naive_lib.log import get_logger
-from cyy_torch_algorithm.quantization.deterministic import (
+from algorithm.cyy_torch_algorithm.quantization.deterministic import (
     NNADQ, NeuralNetworkAdaptiveDeterministicDequant,
     NeuralNetworkAdaptiveDeterministicQuant)
-from cyy_torch_algorithm.quantization.stochastic import stochastic_quantization
+from algorithm.cyy_torch_algorithm.quantization.stochastic import stochastic_quantization
 
 from .cs_endpoint import ClientEndpoint, ServerEndpoint
 
