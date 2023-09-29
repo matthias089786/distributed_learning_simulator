@@ -6,18 +6,26 @@ This is a simulator for distributed Machine Learning and Federated Learning on a
 
 This is a Python project. The third party dependencies are listed in **requirements.txt**. If you use PIP, it should be easy to install them.
 
+pip3 install -r requirements.txt
+
 ## GTG Shapley Value
 
 To run the algorithms of [GTG-Shapley: Efficient and Accurate Participant Contribution Evaluation in Federated Learning](https://dl.acm.org/doi/pdf/10.1145/3501811), use this command
 
 ```
-source ./env2/bin/activate
+source ./env/bin/activate
+source /home/matthias089786/venv/bin/activate  
+
+.\env\Scripts\activate
 ```
 
 ```
 ulimit -n 4096
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 bash gtg_shapley_train.sh
+
+
+python ./simulator.py --config-name gtg_sv/mnist.yaml
 ```
 
 ## FedOBD
